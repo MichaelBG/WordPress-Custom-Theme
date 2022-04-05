@@ -1,16 +1,4 @@
-/*
-Theme Name: My Theme
-Theme URI: https://wordpress.org/themes/MyTheme/
-Author: Michael Bekele
-Author URI: https://wordpress.org/
-Description: Custom WordPress theme developed from an HTML Template
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: mytheme
-*/
-
-@import url("assets/css/fontawesome-all.min.css");
+@import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
 /*

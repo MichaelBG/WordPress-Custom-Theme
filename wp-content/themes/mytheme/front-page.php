@@ -1,4 +1,5 @@
-					<!-- Banner -->
+<?php get_header(); ?>					
+                    <!-- Banner -->
 					<section id="banner">
 						<header>
 							<h2>Howdy. This is Dopetrope.</h2>
@@ -194,3 +195,5 @@
 						</div>
 					</div>
 				</section>
+
+                <?php get_footer(); ?>
