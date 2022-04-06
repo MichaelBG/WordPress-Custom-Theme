@@ -8,7 +8,7 @@ function mytheme_theme_setup(){
     add_theme_support('automatic-feed-links');
 
     register_nav_menus( array(
-        'primary' => __('Primary Menu', mytheme)
+        'primary' => __('Primary Menu', 'mytheme')
     ));
 
 }
