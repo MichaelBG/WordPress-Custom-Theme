@@ -30,3 +30,54 @@ function mytheme_scripts_enqueue(){
 
 add_action('wp_enqueue_scripts', 'mytheme_scripts_enqueue');
 
+function mytheme_widgets_init(){
+register_sidebar(array(
+    'name' => __('Main Sidebar', 'mytheme'),
+    'id' => 'main-sidebar',
+    'description' => 'Primary Right Sidebar',
+    'before_widget' => '< aside id="%1$s" class="widget %2$s" > ',
+    'before_widget' => '</aside>',
+    'before_title' => '<h2 class="widget-title">',
+    'after_title' => '</h2>'
+
+));
+
+register_sidebar(array(
+    'name' => __('Footer Widget 1', 'mytheme'),
+    'id' => 'footer-widget-1',
+    'description' => 'Footer Widget 1',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s" > ',
+    'before_widget' => '</aside>',
+    'before_title' => '<header><h2 class="widget-title">',
+    'after_title' => '</h2></header>'
+
+));
+
+register_sidebar(array(
+    'name' => __('Footer Widget 2', 'mytheme'),
+    'id' => 'footer-widget-2',
+    'description' => 'Footer Widget 2',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s" > ',
+    'before_widget' => '</aside>',
+    'before_title' => '<header><h2 class="widget-title">',
+    'after_title' => '</h2></header>'
+
+));
+
+register_sidebar(array(
+    'name' => __('Footer Widget 3', 'mytheme'),
+    'id' => 'footer-widget-3',
+    'description' => 'Footer Widget 3',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s" > ',
+    'before_widget' => '</aside>',
+    'before_title' => '<header><h2 class="widget-title">',
+    'after_title' => '</h2></header>'
+
+));
+
+
+
+
+}
+
+add_action('widgets_init', 'mytheme_widgets_init');
